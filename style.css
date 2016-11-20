@@ -47,24 +47,34 @@ table {
 body
 {
 	font-family: arial, sans serif;
-	background:#fff;
-	color:#c5c5c5;
+	background:#000;
+	color:#fff;
 	width: 1280px;
 }
 
 /*-----------*/
 
-textarea {
-    font-size: 1em;
+input {
+    text-align:center;
+    font-size: 2em;
     background-color: blue;
-    width: 50px;
-    line-height: 1.4;
+    width: 200px;
+    height: 70px;
+    	color:#fff;
+    line-height: 2em;
     overflow: hidden;
+  outline: none;
+  border: none;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    border: 10px solid #fff;
 }
 
-textarea:hover {
-    font-size: 1em;
-    background-color: red;
-    width: 100px;
-    line-height: 1.4;
+input:focus {
+    background-color: #000;
+    -webkit-transition: background-color 500ms; /* Safari */
+    transition: background-color 500ms;
 }
