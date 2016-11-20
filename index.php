@@ -14,14 +14,14 @@
 <?php
 if(isset($_GET['search'])){
   $content = $_GET['search'];
-  $data = json_decode(file_get_contents('http://api.giphy.com/v1/gifs/search?q='.$content.'&limit=1&api_key=dc6zaTOxFJmzC'));
+  $data = json_decode(file_get_contents('http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&limit=1&tag='.$content));
   //var_dump($data);
   $gif=$data->data[0];
   echo('<img src="'.$gif->images->original->url.'" /><br />');
   for ($i=0; $i < 5 ; $i++) {
     $content = explode('-',$gif->slug)[0];
     echo($content.'<br/>');
-    $data = json_decode(file_get_contents('http://api.giphy.com/v1/gifs/search?q='.$content.'&limit=1&api_key=dc6zaTOxFJmzC'));
+    $data = json_decode(file_get_contents('http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&limit=1&tag='.$content));
     $gif=$data->data[0];
     echo('<img src="'.$gif->images->original->url.'" /><br />');
   }
