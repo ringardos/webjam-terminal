@@ -46,7 +46,7 @@ table {
 
 body
 {
-	font-family: arial, sans serif;
+	font-family: 'Archivo Black', arial, sans serif;
 	background:#000;
 	color:#fff;
 	width: 1280px;
@@ -56,15 +56,16 @@ body
 
 input {
     text-align:center;
+    font-family: 'Archivo Black', arial, sans serif;
     font-size: 2em;
     background-color: blue;
-    width: 200px;
+    width: 400px;
     height: 70px;
-    	color:#fff;
+    color:#fff;
     line-height: 2em;
     overflow: hidden;
-  outline: none;
-  border: none;
+    outline: none;
+    border: none;
     position: absolute;
     top: 40px;
     left: 100px;
